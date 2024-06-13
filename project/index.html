@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Model Deployment</title>
+</head>
+<style>
+body{
+    background-repeat: no-repeat ;background-position: center;
+    background-size:cover ;height: 1000%;
+    background-image: url("data:image/jpeg;base64,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")
+</style>
+<body >
+<center>
+    <h1>Loan Approval Prediction</h1>
+
+    <form action="/" method="POST">
+
+    <label for="gender" > Gender </label>
+    <select name = "gender" id = "gender">
+	<option value="none" selected disabled hidden>Select</option>
+	<option value = "Male"> Male </option>
+	<option value = "Female"> Female </option>
+    </select><br><br>
+
+    <label for="married" > Married </label>
+    <select name = "married" id = "married">
+	<option value="none" selected disabled hidden>Select</option>
+	<option value = "Yes"> Yes </option>
+	<option value = "No"> No </option>
+    </select><br><br>
+
+    <label for="dependents" > Dependents </label>
+    <select name = "dependents" id = "dependents">
+	<option value="none" selected disabled hidden>Select</option>
+	<option value = "0"> 0 </option>
+	<option value = "1"> 1 </option>
+	<option value = "2"> 2 </option>
+	<option value = "3"> 3 </option>
+    </select><br><br>
+
+    <label for="education" > Education </label>
+    <select name = "education" id = "education">
+	<option value="none" selected disabled hidden>Select</option>
+	<option value = "Graduate"> Graduate </option>
+	<option value = "Not Graduate"> Not Graduate </option>
+    </select><br><br>
+
+    <label for="self_employed" > Self_Employed </label>
+    <select name = "self_employed" id = "self_employed">
+	<option value="none" selected disabled hidden>Select</option>
+	<option value = "Yes"> Yes </option>
+	<option value = "No"> No </option>
+    </select><br><br>
+
+    <p> Loan_Amount_Term is selected as 360.0 by default </p> <br>
+
+    <label for="Credit_History" > Credit_History </label>
+    <select name = "credit_history" id = "credit_history">
+	<option value="none" selected disabled hidden>Select</option>
+	<option value = "0"> 0 </option>
+	<option value = "1"> 1 </option>
+    </select><br><br>
+
+    <label for="property_area" > Property_Area </label>
+    <select name = "property_area" id = "property_area">
+	<option value="none" selected disabled hidden>Select</option>
+	<option value = "Urban"> Urban </option>
+	<option value = "Semi-Urban"> Semi-Urban </option>
+	<option value = "Rural"> Rural </option>
+    </select><br><br>
+
+    <label for = "applicantincome"> ApplicantIncome </label><br>
+    <input type = "number" id = "applicantincome" name = "applicantincome"><br><br>
+
+    <label for = "coapplicantincome"> Coapplicantincome </label><br>
+    <input type = "number" id = "coapplicantincome" name = "coapplicantincome"<br><br>
+
+    <label for = "loan_amount"> LoanAmount </label><br>
+    <input type = "number" id = "loan_amount" name = "loan_amount"><br><br>
+
+    <form method="POST" action="/get_result">
+        <input type="submit" value="Get Result">
+
+        {% if result %}
+            <p> Predicted result is: </p>
+            <p>{{ result }}</p>
+        {% endif %}
+    </form>
+</center>
+</body>
+</html>
