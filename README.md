@@ -6,7 +6,6 @@ A brief description of what this project does and who it's for is This project a
 
 
 services used :
-Sure! Here is a brief description of each of the Azure services you mentioned and how they can be used for home loan prediction:
 
 1. Azure Functions: Azure Functions is a serverless computing service that allows you to run code in response to events without having to manage the infrastructure. In the context of home loan prediction, you can use Azure Functions to trigger your machine learning model whenever a user inputs their information for a loan application, allowing for real-time predictions.
 
